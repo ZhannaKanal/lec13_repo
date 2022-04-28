@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <title>{{title}}</title>
+</head>
+<body>
+<h1>{{title}}</h1>
+<form action="{%url 'registration'%}" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    {{form.media}}
+    {{form.as_p}}
+    <button type="submit">Kosu</button>
+</form>
+</body>
+</html>
+<body>

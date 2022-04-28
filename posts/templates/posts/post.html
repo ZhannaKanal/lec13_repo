@@ -1,0 +1,8 @@
+{%block content%}
+<h1>{{post.title}}</h1>
+<p>{{post.is_published}}</p>
+{% for post in post %}
+<h1>Kosh, keldiniz {{post.esim}}</h1>
+
+{% endfor %}
+{%endblock%}
